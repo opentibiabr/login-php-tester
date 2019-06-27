@@ -18,7 +18,7 @@ input[disabled] {
 
 .disabledLabel {
     font-size: .8em;
-    font-style: italic; 
+    font-style: italic;
     color: #ff5555
 
 }
@@ -50,4 +50,29 @@ input[disabled] {
     height: 100%;
     color: #f8f8f2;
     background-color: #282a36
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.title h2 {
+    flex: 1;
+    align-self: baseline;
+}
+.title .social {
+    flex: 1;
+    text-align: right;
+    align-self: center;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.fork-me {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

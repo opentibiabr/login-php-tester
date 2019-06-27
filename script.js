@@ -8,7 +8,7 @@
     var statusContainer = document.querySelector('.status')
     var responseContainer = document.querySelector('.response')
     var requestedAtContainer = document.querySelector('.requestedAt')
-    
+
     function pad(value) {
         if (value < 10) {
             return '0' + value
@@ -19,7 +19,7 @@
 
     function getFormattedNow() {
         var now = new Date()
-        return [now.getHours(), now.getMinutes(), now.getSeconds()].map(pad).join(':') + ' ' + [now.getFullYear(), now.getDay(), now.getMonth()].map(pad).join('-') 
+        return [now.getHours(), now.getMinutes(), now.getSeconds()].map(pad).join(':') + ' ' + [now.getFullYear(), now.getDay(), now.getMonth()].map(pad).join('-')
     }
 
     function randomData() {
@@ -38,7 +38,7 @@
                 var obj = JSON.parse(response.responseText)
                 responseContent += JSON.stringify(obj, null, 2)
             } catch (e) {
-                responseContent += e + "\n" 
+                responseContent += e + "\n"
                 responseContent += response.responseText
             }
         }
@@ -79,8 +79,8 @@
     }
 
     randomField.onchange = function (e) {
-        accountNameField.disabled = e.target.checked 
-        passwordField.disabled = e.target.checked 
+        accountNameField.disabled = e.target.checked
+        passwordField.disabled = e.target.checked
 
         var disabledText = '';
         if (e.target.checked) {
