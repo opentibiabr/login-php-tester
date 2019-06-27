@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh
+}
+
+section {
+    flex: 1;
+}
+
+.form, .output {
+    align-self: center;
+}
+
+input[disabled] {
+    cursor: no-drop;
+}
+
+.disabledLabel {
+    font-size: .8em;
+    font-style: italic; 
+    color: #ff5555
+
+}
+
+.response {
+    background: #44475a;
+    padding: 15px;
+    max-height: 80vh;
+    overflow: scroll
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header .status, .header .requestedAt {
+    flex: 1;
+    align-self: baseline;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.header .requestedAt {
+    text-align: right;
+}
+
+.output {
+    height: 100%;
+    color: #f8f8f2;
+    background-color: #282a36
+}
